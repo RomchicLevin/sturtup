@@ -1,0 +1,635 @@
+body{
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h1,h2,h3{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 10px;
+}
+
+/* ----------Container----------*/
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* ----------Header ----------*/
+
+.header{
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav{
+    margin-top: 18px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav__link{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.5;
+    transition:opacity 0.2s;
+}
+
+.nav__link:ferst child{
+    margin-left: 0;
+}
+
+.nav__link:hover{
+    opacity: 3;
+}
+
+/* ----------Intro ----------*/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 770px;
+    background: url("img/intro.png") center no-repeat;
+    background-size: cover;    
+}
+
+.intro__title{
+    margin: 0 0 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro__subtitle{
+    margin-bottom: 55px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+/*---------Button---------*/
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    border: 2px solid #fff;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+}
+
+.btn:hover{
+    border-color: yellow;
+}
+
+.par__btn{
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    border: 2px solid #fff;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+}
+
+.par__btn:hover{
+    border-color: yellow;
+}
+
+.btn__message{
+    padding: 15px 33px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 345px;
+    margin-top: -85px;
+}
+
+.btn__message:hover{
+    background-color: #ff3f0f;
+    border-color:  #ff3f0f;
+    color: #f8f8f8;
+}
+
+/*---------section__services---------*/
+
+.section__services{
+    padding: 100px 0;
+}
+
+.services__title{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services__title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 31px auto;
+    background-color: #000;
+}
+
+.p__services{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+    font-weight: bold;
+}
+
+/* ----------Features ----------*/
+
+.fetures{
+    display: flex;
+    margin: 100px 0;
+  
+}
+
+.fetures__item{
+    width: 33%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.fetures__icon{
+    margin-bottom: 10px;
+}
+
+.fetures__title{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.p__fetures{
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    line-height: 2;
+}
+
+
+/* ----------Section__about ----------*/
+
+
+.section__about{
+    padding: 100px 0;
+    background-color:#f8f8f8;
+    height: 852px;
+}
+
+.about__title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about__title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 31px auto;
+    background-color: #000;
+}
+
+.p__about{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.text{
+    display: flex;
+    margin: 50px 0;
+}
+
+.p__item{
+    width: 50%;
+    padding: 0 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* ----------Slider ----------*/
+
+.slider{
+    display: flex;
+    margin: 100px 0;
+  
+}
+
+.slider__item{
+    margin-top: -50px;
+    width: 25%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.slide__title{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide__subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* ----------Section__works ----------*/
+
+.section__works{
+    padding: 100px 0;
+}
+
+.works__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.works__title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 31px auto;
+    background-color: #000;
+}
+
+.works__nav{
+    text-align: center;
+}
+
+.works__nav-link{
+    text-decoration: none;
+    color: #000;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.works__nav-link:hover{
+    color: #c0301c;
+}
+
+.works__lev1{
+    display: flex;
+    margin: 70px 0;
+}
+
+.works__lev2{
+    display: flex;
+    margin-top: -40px;
+}
+
+.works__lev3{
+    display: flex;
+    margin-top: 30px;
+}
+
+.works__img{
+    padding-right: 30px;
+}
+
+/* ----------Section__paralax----------*/
+
+.paralax{
+    padding: 100px 0;
+    background: url("img/Paralax\ .jpg") center no-repeat;
+    background-size: cover;
+    height: 368px;
+}
+
+.section__inner{
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+}
+
+/* ----------Section__blog----------*/
+
+.blog{
+    height: 1080px;
+}
+
+.sect__title{
+    margin: 100px 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sect__title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 31px auto;
+    background-color: #000;
+}
+
+.p__blog{
+    margin-top: -80px;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blog__inner{
+    display: flex;
+    margin: 50px 0;
+
+}
+
+/* ----------Blog__Post---------*/
+
+.content{
+    margin-left: 30px;
+}
+
+.cont__title{
+    text-transform: uppercase;
+    color: #c0301c;
+    margin-left: 100px;
+    margin-top: -65px;
+}
+
+.cont__subtitle{
+    margin-left: 100px;
+    margin-top: -10px;
+    font-style: italic;
+}
+
+.p__cont{
+    margin-top: 40px;
+}
+
+.p__read{
+    color: #c0301c;
+}
+
+
+/* ----------clients---------*/
+
+
+.clients{
+    padding: 100px 0;
+    background: #f8f8f8;
+    height: 585px;
+}
+
+.clients__logo{
+    text-align: center;
+}
+
+.clients__title{
+    margin-top: 80px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.clients__subtitle{
+    margin-top: 45px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.client__img{
+    margin-top: 45px;
+    text-align: center;
+}
+
+/* ----------Contact---------*/
+
+.contact{
+    margin: 100px 0;
+    height: 600px;
+}
+
+.touch__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.touch__title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 31px auto;
+    background-color: #000;
+}
+
+.touch__content{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+/* ----------contact-address---------*/
+
+.address{
+    margin: 65px 0;
+}
+
+.h-adrs{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-adrs{
+    margin-right: 930px;
+    padding: 17px 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.form{
+    margin-top: -100px;
+}
+.form__in{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+
+
+input{
+    width: 350px;
+    font-size: 15px;
+    margin-left: 45px;
+    height: 47px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #ff3f0f;
+}
+
+
+/* ----------contact-phone---------*/
+
+.h-phone{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-phone{
+    padding: 17px 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+textarea{
+    width: 745px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 15px;
+    height: 87px;
+    border-color: #ff3f0f;
+}
+
+.texteria-inp{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: -100px;
+}
+
+/* ----------contact-email---------*/
+
+.email{
+    margin: 50px 0;
+}
+
+.h-email{
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.p-email{
+    padding: 17px 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.p-message{
+    margin-top: -90px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+/* ----------Footer---------*/
+
+.footer{
+    background-color: #c0301c;
+    height: 300px;
+}
+
+.footer-inner{
+    margin-left: 500px;
+}
+
+.footer-inner::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: #fff;
+}
+
+.icon__img{
+    margin-top: 100px;
+    margin-right: 15px;
+}
+
+.footer-title{
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
